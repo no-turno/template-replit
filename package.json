@@ -1,0 +1,34 @@
+{
+  "name": "replit-extension-template",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "lint": "bunx @biomejs/biome lint --all src/*",
+    "clean": "bun exec 'rm -rf ./dist'",
+    "type:check": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@replit/extensions": "latest",
+    "@replit/extensions-react": "latest",
+    "@replit/replkit": "latest",
+    "react": "^19.0.0-rc-6f23540c7d-20240528",
+    "react-dom": "^19.0.0-rc-6f23540c7d-20240528",
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc",
+    "vite": "latest",
+    "@vitejs/plugin-react-swc": "latest",
+    "@swc/core": "latest",
+    "@swc/types": "latest",
+    "@swc/wasm": "latest",
+    "@swc/binding_core_wasm": "latest"
+  },
+  "overrides": {
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc"
+  }
+}
